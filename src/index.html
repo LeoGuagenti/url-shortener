@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Main Page</title>
+        <style>
+            /*Styling for page*/
+            body{
+                display: flex;
+                flex-direction: column;
+                background: #efefef;
+                align-items: center;
+                justify-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #url-input{
+				outline: none;
+				border: none;
+				background #454545;
+				width: 100%;
+				color: #343434;
+				padding: 10px;
+			}
+			
+			#button{
+				border: none;
+				outline: none;
+				background: #787878;
+				color: #efefef;
+				padding: 10px;
+				transition: .3s;
+			}
+			
+			#button:hover{
+				cursor: pointer;
+				background: #909090;
+			}
+
+            #title{
+                font-size: 1.4em;
+            }
+
+			form{
+				width: 50%;
+			}
+
+        </style>
+    </head>
+    <body>
+        <p id="title">URL Shortener</p>
+        <form method="post" onsubmit="handleURL()">
+            <input id="url-input" placeholder="Paste long URL" spellcheck=false />
+            <input id="button" type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
