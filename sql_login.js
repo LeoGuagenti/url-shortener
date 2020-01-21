@@ -2,7 +2,7 @@ exports.login = function(){
     return {
         host: 'localhost',
         user: 'root',
-        password: 'Vampireattack700',
+        password: '**********',
         database: 'urls_db'
     }
 }
