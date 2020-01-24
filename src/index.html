@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Main Page</title>
+        <title>Url Shortener</title>
         <style>
             /*Styling for page*/
             body{
@@ -15,7 +15,6 @@
             #url-input{
 				outline: none;
 				border: none;
-				background #454545;
 				width: 100%;
 				color: #343434;
 				padding: 10px;
@@ -47,8 +46,8 @@
     </head>
     <body>
         <p id="title">URL Shortener</p>
-        <form method="post" onsubmit="handleURL()">
-            <input id="url-input" placeholder="Paste long URL" spellcheck=false />
+        <form action="/" method="post">
+            <input type="text" name="input_url" id="url-input" placeholder="Paste long URL" spellcheck=false />
             <input id="button" type="submit" value="Submit" />
         </form>
     </body>

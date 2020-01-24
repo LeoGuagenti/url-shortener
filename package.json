@@ -1,14 +1,8 @@
 {
   "name": "url-shortener",
   "version": "1.0.0",
-  "description": "a localhost url shortener using sql",
+  "description": "small url shortener",
   "main": "index.js",
-  "dependencies": {
-    "formidable": "^1.2.1",
-    "mysql": "^2.17.1",
-    "nodemailer": "^6.4.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,14 +10,18 @@
     "type": "git",
     "url": "git+ssh://git@github.com/LeoGuagenti/url-shortener.git"
   },
-  "keywords": [
-    "sql",
-    "node"
-  ],
+  
   "author": "Leo Guagenti",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LeoGuagenti/url-shortener/issues"
   },
-  "homepage": "https://github.com/LeoGuagenti/url-shortener#readme"
+  "homepage": "https://github.com/LeoGuagenti/url-shortener#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mongodb": "^2.2.34",
+    "url": "^0.11.0"
+  }
 }
